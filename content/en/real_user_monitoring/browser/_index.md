@@ -70,7 +70,7 @@ Paste the generated code snippet into the head tag (in front of any other script
 
 ```html
 <script
-    src="https://www.datadoghq-browser-agent.com/datadog-rum-us.js"
+    src="https://www.datadoghq-browser-agent.com/datadog-rum.js"
     type="text/javascript"
 ></script>
 <script>
@@ -78,6 +78,7 @@ Paste the generated code snippet into the head tag (in front of any other script
         window.DD_RUM.init({
             clientToken: '<CLIENT_TOKEN>',
             applicationId: '<APPLICATION_ID>',
+            datacenter: 'us',
             sampleRate: 100,
         });
 </script>
@@ -88,7 +89,7 @@ Paste the generated code snippet into the head tag (in front of any other script
 
 ```html
 <script
-    src="https://www.datadoghq-browser-agent.com/datadog-rum-eu.js"
+    src="https://www.datadoghq-browser-agent.com/datadog-rum.js"
     type="text/javascript"
 ></script>
 <script>
@@ -96,6 +97,7 @@ Paste the generated code snippet into the head tag (in front of any other script
         window.DD_RUM.init({
             clientToken: '<CLIENT_TOKEN>',
             applicationId: '<APPLICATION_ID>',
+            datacenter: 'eu',
             sampleRate: 100,
         });
 </script>

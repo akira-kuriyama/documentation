@@ -74,10 +74,11 @@ In order to not miss any logs or errors, you should load and configure the libra
 <html>
   <head>
     <title>Example to send logs to Datadog</title>
-    <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs-us.js"></script>
+    <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs.js"></script>
     <script>
       window.DD_LOGS && DD_LOGS.init({
         clientToken: '<CLIENT_TOKEN>',
+        datacenter: 'us',
         forwardErrorsToLogs: true,
         sampleRate: 100
       });
@@ -93,10 +94,11 @@ In order to not miss any logs or errors, you should load and configure the libra
 <html>
   <head>
     <title>Example to send logs to Datadog</title>
-    <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs-eu.js"></script>
+    <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs.js"></script>
     <script>
       window.DD_LOGS && DD_LOGS.init({
         clientToken: '<CLIENT_TOKEN>',
+        datacenter: 'eu',
         forwardErrorsToLogs: true,
         sampleRate: 100
       });
